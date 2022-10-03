@@ -14,9 +14,9 @@ def api_call_youtube():
     api_service_name = "youtube"
     api_version = "v3"
     # API key
-    DEVELOPER_KEY = "AIzaSyAz7d152hEdtGHtupiEZxSux5TfHkKzhLI"
-    CHANNEL_ID = 'UCVKo2iNXggq_1MUqsVgQmMQ'  # Ricky
-    #CHANNEL_ID = 'UC2wDu7KMJGNxLQsHYDLwGTg' # Oakwood
+    DEVELOPER_KEY = {dev_key}
+    CHANNEL_ID = {channel_id}  # Ricky
+    #CHANNEL_ID = {channel_id} # Oakwood
     # API client
     youtube = googleapiclient.discovery.build(
         api_service_name, api_version, developerKey = DEVELOPER_KEY)
